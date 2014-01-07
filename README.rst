@@ -6,6 +6,17 @@ Description
 
 Fabric connector for hubot.
 
+
+Configuration
+-------------
+Env variable `HUBOT_FABRIC_MAPPING_FILE` needs to point to a json file, which
+specifies fabfiles and its aliases::
+
+    {
+        "bar": "/tmp/fab/bar.py",
+        "foo": "/tmp/fab/foo.py"
+    }
+
 Usage:
 ------
 
