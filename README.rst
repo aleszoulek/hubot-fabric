@@ -12,7 +12,7 @@ Usage:
 Define fabric files and aliases in `scripts/fabric.coffee`
 
 Use the alias to call the fabric commnds from the fabfile. When no argument is
-given, fab -l is called instead
+given, fab -l is called instead::
 
 
     Hubot> hubot: bar
