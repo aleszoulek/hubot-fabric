@@ -22,6 +22,9 @@ given, fab -l is called instead::
     Hubot> Shell: O>     host_type
     Hubot> Shell: O> 
     Hubot> Shell: Done fab -f /tmp/fab/bar.py -l.
+
+All options are passed directly to fab::
+
     Hubot> hubot: bar -H localhost host_type
     Hubot> Shell: Calling fab -f /tmp/fab/bar.py -H localhost host_type
     Hubot> Shell: O> [localhost] Executing task 'host_type'
