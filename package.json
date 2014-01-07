@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/aleszoulek/hubot-fabric"
   },
-  "main": "index.coffee",
+  "main": "./scripts/fabric",
   "keywords": [
     "hubot",
     "fabric"
