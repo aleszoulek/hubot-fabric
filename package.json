@@ -1,0 +1,16 @@
+{
+  "name": "hubot-fabric",
+  "version": "0.0.1",
+  "description": "Fabric connector for hubot",
+  "homepage": "http://github.com/aleszoulek/hubot-fabric",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aleszoulek/hubot-fabric"
+  },
+  "keywords": [
+    "hubot",
+    "fabric"
+  ],
+  "author": "Ales Zoulek",
+  "license": "MIT",
+}
