@@ -5,7 +5,7 @@
 #   HUBOT_FABRIC_MAPPING_FILE
 #
 # Commands:
-#   hubot FABFILE_ALIAS [OPTIONS}- Calls fabfile defined in HUBOT_FABRIC_MAPPING_FILE json file and passes all OPTIONS if any
+#   hubot FABFILE_ALIAS [OPTIONS] - Calls fabfile defined in HUBOT_FABRIC_MAPPING_FILE json file and passes all OPTIONS if any
 #
 # Author:
 #   aleszoulek
