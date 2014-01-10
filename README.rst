@@ -9,7 +9,7 @@ Fabric connector for hubot.
 
 Configuration
 -------------
-Env variable `HUBOT_FABRIC_MAPPING_FILE` needs to point to a json file, which
+Env variable `HUBOT_FABRIC_MAPPING_FILE` needs to point to a json file path, which
 specifies fabfiles and its aliases::
 
     {
@@ -19,8 +19,6 @@ specifies fabfiles and its aliases::
 
 Usage:
 ------
-
-Define fabric files and aliases in `scripts/fabric.coffee`
 
 Use the alias to call the fabric commnds from the fabfile. When no argument is
 given, fab -l is called instead::
