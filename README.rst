@@ -12,7 +12,7 @@ Configuration
 Env variable `HUBOT_FABRIC_MAPPING` defines fabfiles and its aliases. For
 example:::
 
-HUBOT_FABRIC_MAPPING='bar=/tmp/fab/bar.py&foo=/tmp/fab/foo.py'
+    HUBOT_FABRIC_MAPPING='bar=/tmp/fab/bar.py&foo=/tmp/fab/foo.py'
 
 Usage:
 ------
