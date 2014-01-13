@@ -2,23 +2,20 @@
 #   Fabric connector to Hubot
 #
 # Configuration:
-#   HUBOT_FABRIC_MAPPING_FILE
+#   HUBOT_FABRIC_MAPPING
 #
 # Commands:
-#   hubot FABFILE_ALIAS [OPTIONS] - Calls fabfile defined in HUBOT_FABRIC_MAPPING_FILE json file and passes all OPTIONS if any
+#   hubot FABFILE_ALIAS [OPTIONS] - Calls fabfile defined in HUBOT_FABRIC_MAPPING environmental variable in query string format alias1=/path/to/fabfile1.py&alias2=/tmp/fab2.py
 #
 # Author:
 #   aleszoulek
 
 
 {exec} = require 'child_process'
+querystring = require 'querystring'
 fs = require 'fs'
 
-FABFILES = {}
-
-MAPPING_FILE = process.env.HUBOT_FABRIC_MAPPING_FILE or ''
-if MAPPING_FILE
-  FABFILES = JSON.parse(fs.readFileSync MAPPING_FILE)
+FABFILES = querystring.parse(process.env.HUBOT_FABRIC_MAPPING)
 
 RESPOND_TO = []
 for key, value of FABFILES
