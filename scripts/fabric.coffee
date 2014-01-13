@@ -38,18 +38,18 @@ module.exports = (robot) ->
     else
       command = "#{command} -l"
 
-    msg.reply "Calling #{command}"
+    msg.send "Calling #{command}"
 
     fab = exec command
     fab.stderr.on 'data', (data) ->
       for line in data.toString().split('\n')
-        msg.reply "E> " + line
+        msg.send "E> " + line
     fab.stdout.on 'data', (data) ->
       for line in data.toString().split('\n')
-        msg.reply "O> " + line
+        msg.send "O> " + line
     fab.on 'exit', (code) ->
       if code == 0
-        msg.reply "Done #{command}."
+        msg.send "Done #{command}."
       else
-        msg.reply "FAILED #{command}. Returned #{code}"
+        msg.send "FAILED #{command}. Returned #{code}"
 
