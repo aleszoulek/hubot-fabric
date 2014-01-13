@@ -14,6 +14,9 @@ example:::
 
     HUBOT_FABRIC_MAPPING='bar=/tmp/fab/bar.py&foo=/tmp/fab/foo.py'
 
+`HUBOT_FABRIC_SKIP_LINES_PATTERN` regexp, defines what fabric output
+to skip. Defaults `^\s*$` (skip all empty lines).
+
 Usage:
 ------
 
