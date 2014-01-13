@@ -9,13 +9,18 @@ Fabric connector for hubot.
 
 Configuration
 -------------
-Env variable `HUBOT_FABRIC_MAPPING` defines fabfiles and its aliases. For
-example:::
+Use following env varibales:
+
+
+``HUBOT_FABRIC_MAPPING`` defines fabfiles and its aliases. For example:::
 
     HUBOT_FABRIC_MAPPING='bar=/tmp/fab/bar.py&foo=/tmp/fab/foo.py'
 
-`HUBOT_FABRIC_SKIP_LINES_PATTERN` regexp, defines what fabric output
-to skip. Defaults `^\s*$` (skip all empty lines).
+``HUBOT_FABRIC_SKIP_LINES_PATTERN`` regexp, defines what fabric output
+to skip. Use regexp's OR (``|``) to define a list of pattens (``^fab|connecting``).
+Defaults to:::
+
+    HUBOT_FABRIC_SKIP_LINES_PATTERN='^\s*$' # (skip all empty lines).
 
 Usage:
 ------
