@@ -51,3 +51,9 @@ All options are passed directly to fab::
     Hubot> Shell: Done fab -f /tmp/fab/bar.py -H localhost host_type.
     Hubot> 
 
+
+Warning
+-------
+
+This plugin should be used only in closed trusted Hubot channels. Users can
+easily hijack the hubot user's shell.
