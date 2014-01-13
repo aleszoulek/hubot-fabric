@@ -43,10 +43,10 @@ module.exports = (robot) ->
     fab = exec command
     fab.stderr.on 'data', (data) ->
       for line in data.toString().split('\n')
-        msg.send "E> " + line
+        msg.send "Error: " + line
     fab.stdout.on 'data', (data) ->
       for line in data.toString().split('\n')
-        msg.send "O> " + line
+        msg.send line
     fab.on 'exit', (code) ->
       if code == 0
         msg.send "Done #{command}."
