@@ -13,7 +13,6 @@
 
 {exec} = require 'child_process'
 querystring = require 'querystring'
-fs = require 'fs'
 
 FABFILES = querystring.parse(process.env.HUBOT_FABRIC_MAPPING)
 
